@@ -1,0 +1,521 @@
+:root {
+  --cream: #ffe7cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: #ffe7cc;
+}
+
+.heading span {
+  color: #b4cde6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #aebdca;
+  color: black;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: #abd9ff;
+}
+
+/*--- BAGIAN HEADER --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffe7cc;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: red;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: black;
+}
+
+header .navbar a:hover {
+  color: red;
+}
+
+header .medsos a {
+  font-size: 3rem;
+  margin-left: 2rem;
+  color: grey;
+}
+
+header .medsos a:hover {
+  color: #7895b2;
+}
+
+/*--- HEADER END ----*/
+
+/*--- Halaman --- */
+.halaman {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(gambar/home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.halaman .deskripsi {
+  max-width: 50rem;
+}
+
+.halaman .deskripsi h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.halaman .deskripsi span {
+  font-size: 3.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.halaman .deskripsi p {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.tentang .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.tentang .row .video-deskripsi {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.tentang .row .video-deskripsi video {
+  width: 100%;
+  border: 1.5rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.tentang .row .video-deskripsi h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background: #fef5ac;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.tentang .row .deskripsi {
+  flex: 1 1 45rem;
+}
+
+.tentang .row .deskripsi h3 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.tentang .row .deskripsi p {
+  font-size: 1.7rem;
+  color: #7895b2;
+  padding: 0.5rem 0;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
+.icon-container {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icon-container .icon {
+  background: white;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icon-container .icon img {
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.icon-container .icon h3 {
+  color: black;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.icon-container .icon span {
+  color: black;
+  font-size: 2rem;
+}
+
+.produk h1 {
+  color: #182747;
+}
+
+.produk .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.produk .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.produk .box-container .box .diskon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color: red;
+  background: white;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.produk .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.produk .box-container .box .image img {
+  height: 22rem;
+}
+
+.produk .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.produk .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.produk .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+
+.produk .box-container .box .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background: #ffe7cc;
+  color: red;
+}
+
+.produk .box-container .box .image .icons .cart-btn {
+  border-left: 0.1rem solid grey;
+  border-right: 0.1rem solid grey;
+  width: 100%;
+}
+
+.produk .box-container .box .image .icons a:hover {
+  background: #d0b8a8;
+}
+
+.produk .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.produk .box-container .box .content h3 {
+  font-size: 2rem;
+  color: black;
+}
+
+.produk .box-container .box .content .harga {
+  font-size: 2.5rem;
+  color: #ffd384;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.produk .box-container .box .content .harga span {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.review .box-container .box .bintang i {
+  color: yellow;
+  font-size: 2rem;
+}
+
+.review .box-container .box p {
+  color: grey;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .pelanggan {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .pelanggan img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.review .box-container .box .pelanggan h3 {
+  font-size: 2rem;
+  color: black;
+}
+
+.review .box-container .box .pelanggan span {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.kontak .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.kontak .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.kontak .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.kontak .row .image {
+  flex: 1 1 40rem;
+}
+
+.kontak .row .image img {
+  width: 100%;
+}
+
+.kontak .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: black;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.7rem 0;
+  width: 100%;
+}
+
+.kontak .row form .box:focus {
+  border-color: #a7ffe4;
+}
+
+.kontak .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.pembayaran h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.pembayaran .gambar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.pembayaran .gambar-container .gambar {
+  flex: 1 1 30rem;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.pembayaran .gambar-container .gambar img {
+  width: 30rem;
+  margin-left: 15rem;
+  margin-right: auto;
+}
+
+/*media queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .halaman {
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  .halaman .deskripsi h3 {
+    font-size: 5rem;
+  }
+
+  .halaman .deskripsi span {
+    font-size: 2.5rem;
+  }
+
+  .icon-container .icon h3 {
+    color: black;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .icon-container .icon span {
+    color: black;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  heading {
+    font-size: 3rem;
+  }
+}
